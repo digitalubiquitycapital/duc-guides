@@ -130,27 +130,41 @@ def create_simple_pdfs():
     # Create PDFs directory
     Path('pdfs').mkdir(exist_ok=True)
     
-    # Read base config
+    # Read base config with custom loader to handle Python tags
     with open('mkdocs.yml', 'r') as f:
-        base_config = yaml.safe_load(f)
+        content = f.read()
+        # Remove Python function references for PDF generation
+        content = content.replace('!!python/name:materialx.emoji.twemoji', "'twemoji'")
+        content = content.replace('!!python/name:materialx.emoji.to_svg', "'to_svg'")
+        content = content.replace('!!python/name:pymdownx.superfences.fence_code_format', "'fence_code_format'")
+        base_config = yaml.safe_load(content)
     
     # Configure for PDF generation
     base_config['plugins'] = base_config.get('plugins', [])
     
-    # Add with-pdf plugin configuration
+    # Add with-pdf plugin configuration with DUC branding
     base_config['plugins'].append({
         'with-pdf': {
             'author': 'DUC Capital Platform Team',
-            'copyright': '© 2024 DUC Capital Platform',
+            'copyright': '© 2024 Digital Ubiquity Capital',
             'cover': True,
             'back_cover': True,
-            'cover_title': 'DUC Capital Platform Documentation',
-            'cover_subtitle': 'Sagacity • Bridge • Lift',
+            'cover_title': 'DUC Capital Platform',
+            'cover_subtitle': 'Complete Documentation Guide\nSagacity • Bridge • Lift',
+            'cover_logo': 'overrides/assets/images/DUC-Logo.png',
             'toc_title': 'Table of Contents',
+            'toc_level': 3,
             'output_path': 'pdfs/DUC_Platform_Complete.pdf',
             'enabled_if_env': 'ENABLE_PDF_EXPORT',
             'render_js': False,
-            'headless_chrome_path': 'chromium-browser'
+            'headless_chrome_path': 'chromium-browser',
+            'custom_template_path': 'overrides/pdf',
+            'theme': {
+                'primary_color': '#E68A6B',
+                'secondary_color': '#3E4147',
+                'font_family': 'Inter, sans-serif',
+                'code_font_family': 'JetBrains Mono, monospace'
+            }
         }
     })
     
@@ -164,7 +178,7 @@ def create_simple_pdfs():
     env['ENABLE_PDF_EXPORT'] = '1'
     
     result = subprocess.run(
-        ['mkdocs', 'build', '-f', 'mkdocs-pdf.yml'],
+        ['./venv/bin/mkdocs', 'build', '-f', 'mkdocs-pdf.yml'],
         env=env,
         capture_output=True,
         text=True

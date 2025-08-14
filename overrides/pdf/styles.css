@@ -1,0 +1,403 @@
+/* DUC Capital Platform - PDF Export Styles */
+
+@page {
+    size: A4;
+    margin: 2.5cm 2cm 2.5cm 2cm;
+    
+    @top-left {
+        content: string(chapter-title);
+        font-family: 'Inter', sans-serif;
+        font-size: 10pt;
+        color: #6C7280;
+    }
+    
+    @top-right {
+        content: "DUC Capital Platform";
+        font-family: 'Inter', sans-serif;
+        font-size: 10pt;
+        color: #E68A6B;
+        font-weight: 600;
+    }
+    
+    @bottom-center {
+        content: counter(page);
+        font-family: 'Inter', sans-serif;
+        font-size: 10pt;
+        color: #6C7280;
+    }
+    
+    @bottom-right {
+        content: "© 2024 Digital Ubiquity Capital";
+        font-family: 'Inter', sans-serif;
+        font-size: 8pt;
+        color: #9CA3AF;
+    }
+}
+
+@page :first {
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-center { content: none; }
+    @bottom-right { content: none; }
+}
+
+/* Cover Page */
+.pdf-cover {
+    page: cover;
+    page-break-after: always;
+    text-align: center;
+    padding-top: 10cm;
+}
+
+.pdf-cover-logo {
+    max-width: 300px;
+    margin-bottom: 3cm;
+}
+
+.pdf-cover-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 36pt;
+    font-weight: 700;
+    color: #3E4147;
+    margin-bottom: 1cm;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pdf-cover-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18pt;
+    color: #E68A6B;
+    font-weight: 500;
+    margin-bottom: 2cm;
+}
+
+.pdf-cover-version {
+    font-family: 'Inter', sans-serif;
+    font-size: 12pt;
+    color: #6C7280;
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #3E4147;
+}
+
+h1 {
+    string-set: chapter-title content();
+    font-size: 24pt;
+    font-weight: 700;
+    color: #3E4147;
+    border-bottom: 3px solid #E68A6B;
+    padding-bottom: 0.5cm;
+    margin-top: 0;
+    margin-bottom: 1cm;
+    page-break-after: avoid;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: 600;
+    color: #3E4147;
+    margin-top: 1.5cm;
+    margin-bottom: 0.5cm;
+    page-break-after: avoid;
+    border-left: 4px solid #E68A6B;
+    padding-left: 0.5cm;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #E68A6B;
+    margin-top: 1cm;
+    margin-bottom: 0.5cm;
+    page-break-after: avoid;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #525660;
+    margin-top: 0.8cm;
+    margin-bottom: 0.4cm;
+    page-break-after: avoid;
+}
+
+p {
+    margin: 0.5cm 0;
+    text-align: justify;
+    orphans: 3;
+    widows: 3;
+}
+
+/* Lists */
+ul, ol {
+    margin: 0.5cm 0 0.5cm 1cm;
+}
+
+li {
+    margin: 0.2cm 0;
+}
+
+ul li::marker {
+    color: #E68A6B;
+}
+
+ol li::marker {
+    color: #E68A6B;
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    color: #E68A6B;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #6C7280;
+    font-weight: normal;
+}
+
+a[href^="#"]:after {
+    content: none;
+}
+
+/* Code */
+code {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 10pt;
+    background-color: #F3F4F6;
+    padding: 0.1cm 0.2cm;
+    border-radius: 3px;
+    color: #E68A6B;
+}
+
+pre {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid #E68A6B;
+    padding: 0.5cm;
+    margin: 0.5cm 0;
+    page-break-inside: avoid;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #3E4147;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1cm 0;
+    page-break-inside: avoid;
+}
+
+th {
+    background: linear-gradient(135deg, #E68A6B 0%, #D47356 100%);
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.3cm 0.5cm;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border: 1px solid #E5E7EB;
+    padding: 0.3cm 0.5cm;
+    font-size: 10pt;
+}
+
+tr:nth-child(even) {
+    background-color: #F9FAFB;
+}
+
+/* Admonitions / Callouts */
+.admonition {
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid #E68A6B;
+    padding: 0.5cm;
+    margin: 0.5cm 0;
+    page-break-inside: avoid;
+    background-color: #FFF9F7;
+}
+
+.admonition-title {
+    font-weight: 600;
+    color: #E68A6B;
+    margin-bottom: 0.3cm;
+    font-size: 11pt;
+}
+
+.admonition.note {
+    border-left-color: #3B82F6;
+    background-color: #F0F9FF;
+}
+
+.admonition.note .admonition-title {
+    color: #3B82F6;
+}
+
+.admonition.warning {
+    border-left-color: #F59E0B;
+    background-color: #FFFBEB;
+}
+
+.admonition.warning .admonition-title {
+    color: #F59E0B;
+}
+
+.admonition.danger {
+    border-left-color: #EF4444;
+    background-color: #FEF2F2;
+}
+
+.admonition.danger .admonition-title {
+    color: #EF4444;
+}
+
+.admonition.success {
+    border-left-color: #10B981;
+    background-color: #F0FDF4;
+}
+
+.admonition.success .admonition-title {
+    color: #10B981;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #E68A6B;
+    padding-left: 0.5cm;
+    margin: 0.5cm 0;
+    font-style: italic;
+    color: #525660;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5cm auto;
+    page-break-inside: avoid;
+}
+
+figure {
+    margin: 1cm 0;
+    text-align: center;
+    page-break-inside: avoid;
+}
+
+figcaption {
+    font-size: 10pt;
+    color: #6C7280;
+    font-style: italic;
+    margin-top: 0.3cm;
+}
+
+/* Table of Contents */
+.toc {
+    page-break-after: always;
+}
+
+.toc h1 {
+    font-size: 24pt;
+    color: #3E4147;
+    border-bottom: 3px solid #E68A6B;
+    padding-bottom: 0.5cm;
+    margin-bottom: 1cm;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin: 0.3cm 0;
+    padding-left: 0.5cm;
+    border-left: 2px solid transparent;
+}
+
+.toc li:hover {
+    border-left-color: #E68A6B;
+}
+
+.toc a {
+    color: #3E4147;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toc a:after {
+    content: none;
+}
+
+.toc .page-number {
+    color: #6C7280;
+    font-weight: normal;
+}
+
+/* Page Breaks */
+.page-break {
+    page-break-after: always;
+}
+
+.no-page-break {
+    page-break-inside: avoid;
+}
+
+/* Footer and Header Styles */
+.pdf-header {
+    position: running(header);
+    font-size: 10pt;
+    color: #6C7280;
+}
+
+.pdf-footer {
+    position: running(footer);
+    font-size: 10pt;
+    color: #6C7280;
+    text-align: center;
+}
+
+/* Custom DUC Elements */
+.duc-highlight {
+    background: linear-gradient(135deg, rgba(230, 138, 107, 0.1) 0%, rgba(230, 138, 107, 0.05) 100%);
+    padding: 0.5cm;
+    border-radius: 5px;
+    margin: 0.5cm 0;
+}
+
+.duc-divider {
+    border: none;
+    border-top: 2px solid #E68A6B;
+    margin: 1cm 0;
+}
+
+/* Print Optimization */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+}

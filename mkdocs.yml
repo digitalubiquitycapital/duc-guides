@@ -1,39 +1,53 @@
 site_name: DUC Capital Platform Documentation
 site_description: Complete guide to Sagacity (Deal Preparation), Bridge (Tokenization), and Lift (Asset Management)
 site_author: DUC Team
-site_url: https://guide.duc-apps.com
+site_url: https://digitalubiquitycapital.github.io/duc-guides/
+repo_url: https://github.com/digitalubiquitycapital/duc-guides
+repo_name: duc-guides
+edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
+  logo: DUC-Logo.png
+  favicon: DUC-Square-Logo.png
   palette:
-    - scheme: default
-      primary: blue
-      accent: light-blue
+    - scheme: duc-light
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
-      primary: blue
-      accent: light-blue
+    - scheme: duc-dark
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
+    - navigation.path
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
+    - search.share
     - content.tabs.link
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
     - toc.follow
+    - toc.integrate
   language: en
   font:
     text: Inter
-    code: Source Code Pro
-  icon:
-    logo: material/book-open-variant
+    code: JetBrains Mono
 
 plugins:
   - search:
@@ -70,95 +84,121 @@ extra:
     - icon: fontawesome/solid/house
       link: https://duc-apps.com
   generator: false
+  
+extra_css:
+  - assets/stylesheets/extra.css
 
 nav:
-  - Welcome: index.md
+  - Home: index.md
   
-  - Platform Overview:
-    - Understanding the Capital Platform: getting-started/overview.md
-    - Deal Lifecycle Flow: getting-started/lifecycle-flow.md
-    - Which Application to Use: getting-started/choosing-app.md
-    - Quick Start Guide: getting-started/quick-start.md
+  - Overview:
+    - Platform Overview: getting-started/overview.md
+    - Deal Lifecycle: getting-started/lifecycle-flow.md
+    - Choosing Your App: getting-started/choosing-app.md
+    - Quick Start: getting-started/quick-start.md
+    - How Apps Connect: getting-started/how-they-connect.md
   
-  - Sagacity - Deal Preparation:
-    - What is Sagacity?: sagacity/what-is-sagacity.md
+  - Sagacity:
+    - Overview: sagacity/what-is-sagacity.md
     - Getting Started:
-      - First Time Setup: sagacity/getting-started/first-setup.md
-      - Dashboard Overview: sagacity/getting-started/dashboard.md
+      - First Setup: sagacity/getting-started/first-setup.md
+      - Dashboard: sagacity/getting-started/dashboard.md
       - Navigation: sagacity/getting-started/navigation.md
     - Deal Lifecycle:
-      - Deal Origination: sagacity/deals/origination.md
-      - Evaluation & Analysis: sagacity/deals/evaluation.md
+      - Origination: sagacity/deals/origination.md
+      - Evaluation: sagacity/deals/evaluation.md
       - Structuring: sagacity/deals/structuring.md
       - Due Diligence: sagacity/deals/due-diligence.md
       - Deal Close: sagacity/deals/close.md
-    - AI-Driven Tools:
+    - AI Tools:
       - Valuation Models: sagacity/ai-tools/valuation.md
       - Risk Analysis: sagacity/ai-tools/risk-analysis.md
       - Market Research: sagacity/ai-tools/market-research.md
       - Financial Modeling: sagacity/ai-tools/financial-modeling.md
+      - Document Analysis: sagacity/ai-tools/document-analysis.md
     - Deliverables:
-      - Investment Committee Memo: sagacity/deliverables/ic-memo.md
+      - IC Memo: sagacity/deliverables/ic-memo.md
       - Valuation Reports: sagacity/deliverables/valuation-reports.md
-      - Deal Book Preparation: sagacity/deliverables/deal-book.md
+      - Deal Book: sagacity/deliverables/deal-book.md
+      - Executive Summary: sagacity/deliverables/executive-summary.md
+    - Daily Use:
+      - Analytics: sagacity/daily/analytics.md
+      - Collaboration: sagacity/daily/collaboration.md
+      - Managing Work: sagacity/daily/managing-work.md
+      - Reports: sagacity/daily/reports.md
   
-  - Bridge - Tokenization Platform:
-    - What is Bridge?: bridge/what-is-bridge.md
+  - Bridge:
+    - Overview: bridge/what-is-bridge.md
     - Getting Started:
-      - Understanding Tokenization: bridge/getting-started/understanding.md
-      - First Token Issuance: bridge/getting-started/first-issuance.md
+      - Understanding: bridge/getting-started/understanding.md
+      - First Issuance: bridge/getting-started/first-issuance.md
       - Platform Setup: bridge/getting-started/setup.md
-    - Asset Tokenization:
-      - Asset Types Overview: bridge/tokenization/asset-types.md
+      - First Connection: bridge/getting-started/first-connection.md
+    - Tokenization:
+      - Asset Types: bridge/tokenization/asset-types.md
       - Direct Assets: bridge/tokenization/direct-assets.md
-      - Fractionalized Assets: bridge/tokenization/fractionalized.md
+      - Fractionalized: bridge/tokenization/fractionalized.md
       - Corporate RWA: bridge/tokenization/corporate-rwa.md
-    - Capital Structuring:
+      - Token Standards: bridge/tokenization/token-standards.md
+    - Structuring:
       - SPV Setup: bridge/structuring/spv.md
-      - Cap Table Management: bridge/structuring/cap-table.md
-      - Equity & Debt Instruments: bridge/structuring/instruments.md
-    - Compliance & Risk:
-      - KYC/AML Processes: bridge/compliance/kyc-aml.md
-      - Transfer Restrictions: bridge/compliance/transfer-restrictions.md
-      - Covenant Monitoring: bridge/compliance/covenants.md
-    - Investor Management:
-      - Offer Creation: bridge/investors/offers.md
-      - Investor Onboarding: bridge/investors/onboarding.md
-      - Registry Management: bridge/investors/registry.md
+      - Cap Table: bridge/structuring/cap-table.md
+      - Instruments: bridge/structuring/instruments.md
+      - Waterfall: bridge/structuring/waterfall.md
+    - Compliance:
+      - KYC/AML: bridge/compliance/kyc-aml.md
+      - Transfer Rules: bridge/compliance/transfer-restrictions.md
+      - Covenants: bridge/compliance/covenants.md
+      - Regulatory: bridge/compliance/regulatory.md
+    - Investors:
+      - Offers: bridge/investors/offers.md
+      - Onboarding: bridge/investors/onboarding.md
+      - Registry: bridge/investors/registry.md
+      - Communications: bridge/investors/communications.md
+    - Using Bridge:
+      - Monitoring: bridge/using/monitoring.md
+      - Syncing: bridge/using/syncing.md
   
-  - Lift - Asset Management:
-    - What is Lift?: lift/what-is-lift.md
+  - Lift:
+    - Overview: lift/what-is-lift.md
     - Getting Started:
-      - Understanding Lift: lift/getting-started/understanding.md
-      - Dashboard Overview: lift/getting-started/dashboard.md
+      - Understanding: lift/getting-started/understanding.md
+      - Dashboard: lift/getting-started/dashboard.md
       - Portfolio View: lift/getting-started/portfolio.md
-    - Execution Tracking:
-      - Project Milestones: lift/execution/milestones.md
-      - KPI Monitoring: lift/execution/kpi.md
-      - Stage Management: lift/execution/stages.md
-    - Asset Performance:
-      - Operational Metrics: lift/performance/metrics.md
-      - Financial Tracking: lift/performance/financial.md
-      - Revenue Performance: lift/performance/revenue.md
-    - Compliance & Reporting:
-      - Covenant Monitoring: lift/compliance/covenants.md
-      - Regulatory Checks: lift/compliance/regulatory.md
-      - Performance Reports: lift/compliance/reports.md
-    - Portfolio Management:
-      - Active Assets View: lift/portfolio/active-assets.md
-      - Project Overview: lift/portfolio/projects.md
-      - Data Integration: lift/portfolio/data-feeds.md
+      - Welcome: lift/getting-started/welcome.md
+    - Execution:
+      - Milestones: lift/execution/milestones.md
+      - KPI Tracking: lift/execution/kpi.md
+      - Stages: lift/execution/stages.md
+      - Workflows: lift/execution/workflows.md
+    - Performance:
+      - Metrics: lift/performance/metrics.md
+      - Financial: lift/performance/financial.md
+      - Revenue: lift/performance/revenue.md
+      - Benchmarks: lift/performance/benchmarks.md
+    - Compliance:
+      - Covenants: lift/compliance/covenants.md
+      - Regulatory: lift/compliance/regulatory.md
+      - Reports: lift/compliance/reports.md
+      - Audits: lift/compliance/audits.md
+    - Portfolio:
+      - Active Assets: lift/portfolio/active-assets.md
+      - Projects: lift/portfolio/projects.md
+      - Data Feeds: lift/portfolio/data-feeds.md
+      - Analytics: lift/portfolio/analytics.md
+    - Daily Operations:
+      - Add Users: lift/daily/add-users.md
+      - Managing Users: lift/managing/users.md
   
-  - Platform Integration:
-    - Deal Lifecycle Flow: integration/lifecycle.md
-    - Data Flow Architecture: integration/data-flow.md
-    - Portfolio Continuity: integration/portfolio.md
-    - Performance Feedback Loop: integration/feedback.md
-    - Best Practices: integration/best-practices.md
+  - Together:
+    - Connections: together/connections.md
+    - Dashboard: together/dashboard.md
+    - Data Flow: together/data-flow.md
+    - Single Login: together/single-login.md
   
-  - Resources & Support:
+  - Support:
     - Getting Help: help/finding-help.md
     - Glossary: help/glossary.md
-    - Training Materials: help/training.md
-    - Contact Support: help/contact.md
+    - Training: help/training.md
+    - Contact: help/contact.md
     - FAQ: help/faq.md

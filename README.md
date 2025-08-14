@@ -1,9 +1,14 @@
 # DUC Capital Platform Documentation
 
-## Overview
-This repository contains comprehensive documentation for the DUC Capital Platform - an integrated suite for managing the complete capital lifecycle from deal origination through tokenization to ongoing asset management.
+![DUC Logo](DUC-Logo.png)
 
-## Platform Components
+Welcome to the comprehensive documentation for the DUC Capital Platform - an integrated suite for managing the complete capital lifecycle from deal origination through tokenization to ongoing asset management.
+
+## 🚀 Live Documentation
+
+Visit the documentation at: [https://digitalubiquitycapital.github.io/duc-guides/](https://digitalubiquitycapital.github.io/duc-guides/)
+
+## 📚 Platform Components
 
 ### 📊 **Sagacity - Corporate Finance & Deal Preparation**
 - **Purpose:** Front-end of capital lifecycle for deal origination, evaluation, and structuring
@@ -20,133 +25,130 @@ This repository contains comprehensive documentation for the DUC Capital Platfor
 - **Users:** Asset managers, project managers, operations teams
 - **Output:** Performance data feeding back for benchmarking and investor updates
 
-## Documentation Philosophy
-This documentation is designed for **finance professionals** who understand capital markets but may be new to tokenization. It focuses on:
-- Clear explanations of platform capabilities
-- Role-based guidance for different users
-- Practical workflows and use cases
-- Integration points between applications
-- Compliance and regulatory frameworks
-
-## Quick Start
+## 🛠️ Quick Start
 
 ### Prerequisites
-- Python 3.8 or higher
-- pip package manager
+- Python 3.9+
+- Make
+- Git
 
-### Installation
-1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-   cd duc-app-docs
-   ```
+### Installation & Setup
 
-2. Create a virtual environment:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Building the Documentation
 ```bash
-mkdocs build
-```
-The built documentation will be in the `site/` directory.
+# Clone the repository
+git clone https://github.com/digitalubiquitycapital/duc-guides.git
+cd duc-guides
 
-### Serving Locally
-To preview the documentation locally:
+# Install dependencies using Make
+make install
+
+# Or manually:
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### Available Make Commands
+
 ```bash
-mkdocs serve
+make help         # Show all available commands
+make install      # Install dependencies
+make serve        # Start local development server
+make build        # Build HTML documentation
+make pdf          # Generate PDF documentation
+make test         # Test documentation build
+make deploy       # Deploy to GitHub Pages
+make status       # Check deployment status
+make preview      # Preview before deployment
+make clean        # Clean build artifacts
 ```
-Then open http://127.0.0.1:8000 in your browser.
 
-## Documentation Structure
+## 📦 Deployment
+
+### Automatic Deployment (GitHub Actions)
+
+This documentation is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+```bash
+# Full deployment workflow
+make deploy-full
+
+# Or step by step:
+make build        # Build documentation
+make test         # Test for errors
+make commit       # Commit changes
+make push         # Push to GitHub (triggers deployment)
+```
+
+### Manual Deployment
+
+```bash
+# Deploy directly from local
+make deploy-local
+
+# Or using mkdocs directly
+mkdocs gh-deploy --force
+```
+
+### GitHub Actions Workflow
+
+The `.github/workflows/deploy.yml` workflow automatically:
+1. Builds the documentation on every push to main
+2. Validates all links and references
+3. Deploys to GitHub Pages
+4. Makes the site available at the GitHub Pages URL
+
+## 🎨 Features
+
+- **Custom Theme**: Beautiful DUC branding with orange (#E68A6B) and charcoal (#3E4147) color scheme
+- **Dark/Light Mode**: Toggle between themes for comfortable reading
+- **Full-Text Search**: Search across all documentation
+- **Mobile Responsive**: Optimized for all device sizes
+- **PDF Export**: Download documentation for offline reading
+- **Mermaid Diagrams**: Visual workflow representations
+- **Code Highlighting**: Syntax highlighting for examples
+- **Version Control**: Full history and rollback capability
+
+## 📝 Documentation Structure
 
 ```
 docs/
-├── index.md                    # Platform overview and navigation
-├── getting-started/            # Platform overview and role selection
-│   ├── overview.md            # Understanding the three applications
-│   ├── choosing-app.md        # Which application for your role
-│   └── quick-start.md         # Getting started guide
+├── index.md                 # Home page
+├── getting-started/         # Platform overview
+│   ├── overview.md         # Understanding the platform
+│   ├── lifecycle-flow.md   # Complete deal lifecycle
+│   ├── choosing-app.md     # Role-based navigation
+│   └── quick-start.md      # Getting started guide
 │
-├── sagacity/                   # Deal preparation platform
-│   ├── getting-started/        # Setup and navigation
-│   ├── deals/                  # Deal lifecycle management
-│   ├── ai-tools/              # AI-driven analysis tools
-│   └── deliverables/          # Reports and deal books
+├── sagacity/               # Deal preparation platform
+│   ├── deals/             # Deal lifecycle (origination → close)
+│   ├── ai-tools/          # AI-powered analysis tools
+│   └── deliverables/      # Reports and outputs
 │
-├── bridge/                     # Tokenization platform
-│   ├── getting-started/        # Understanding tokenization
-│   ├── tokenization/          # Asset tokenization processes
-│   ├── structuring/           # Capital structuring (SPV, cap tables)
-│   ├── compliance/            # KYC/AML and regulations
-│   └── investors/             # Investor management
+├── bridge/                 # Tokenization platform
+│   ├── tokenization/      # Asset tokenization
+│   ├── structuring/       # Capital structuring
+│   ├── compliance/        # KYC/AML and regulations
+│   └── investors/         # Investor management
 │
-├── lift/                       # Asset management platform
-│   ├── getting-started/        # Platform orientation
-│   ├── execution/             # Milestone and KPI tracking
-│   ├── performance/           # Financial and operational metrics
-│   ├── compliance/            # Covenant monitoring
-│   └── portfolio/             # Cross-asset portfolio views
+├── lift/                   # Asset management platform
+│   ├── execution/         # Milestone tracking
+│   ├── performance/       # Metrics and KPIs
+│   ├── compliance/        # Covenant monitoring
+│   └── portfolio/         # Portfolio management
 │
-├── integration/                # Platform integration
-│   ├── lifecycle.md           # Deal lifecycle flow
-│   ├── data-flow.md           # Data architecture
-│   └── portfolio.md           # Portfolio continuity
+├── integration/            # Platform integration
+│   ├── lifecycle.md       # Deal flow integration
+│   ├── data-flow.md       # Data architecture
+│   └── api-reference.md   # API documentation
 │
-└── help/                       # Support resources
-    ├── glossary.md            # Financial and technical terms
-    ├── faq.md                 # Frequently asked questions
-    └── contact.md             # Support contacts
+└── help/                   # Support resources
+    ├── glossary.md        # Terms and definitions
+    ├── faq.md            # Common questions
+    └── contact.md        # Support contacts
 ```
 
-## Key Features
-
-### Deal Lifecycle Coverage
-- **Origination to Close:** Sagacity handles deal preparation
-- **Tokenization:** Bridge creates compliant digital assets
-- **Management:** Lift monitors performance and compliance
-
-### Target Audiences
-- Investment banking professionals
-- Corporate development teams
-- Capital markets specialists
-- Compliance officers
-- Asset and portfolio managers
-- Project management teams
-
-### Documentation Highlights
-- Role-based navigation paths
-- Real-world use cases (PE, real estate, infrastructure, bonds)
-- Compliance frameworks (ERC-3643, KYC/AML)
-- Integration workflows between applications
-- Performance tracking and reporting
-
-## Deployment
-
-### GitHub Pages
-```bash
-mkdocs gh-deploy
-```
-
-### Custom Server
-Build the documentation and serve the `site/` directory through your web server.
-
-## Contributing
-When adding new documentation:
-1. Maintain professional tone for finance audience
-2. Include practical examples and use cases
-3. Explain technical concepts clearly
-4. Cross-reference related topics
-5. Test all links and navigation
-
-## Platform Workflow
+## 🔧 Platform Workflow
 
 ```
 Sagacity (Deal Prep) → Bridge (Tokenization) → Lift (Management)
@@ -156,8 +158,60 @@ Deal Book              Token Issuance         Performance Data
                                               Feedback Loop
 ```
 
-## License
-[Your License Here]
+## 🤝 Contributing
 
-## Support
-For questions about the documentation or platform, please contact the DUC support team.
+We welcome contributions to improve our documentation!
+
+### How to Contribute
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Make your changes
+4. Test locally (`make test`)
+5. Commit changes (`git commit -am 'Add improvement'`)
+6. Push to branch (`git push origin feature/improvement`)
+7. Create Pull Request
+
+### Documentation Guidelines
+
+- Maintain professional tone for finance audience
+- Include practical examples and use cases
+- Explain technical concepts clearly
+- Cross-reference related topics
+- Test all links and navigation
+- Follow the existing structure and style
+
+## 📊 Documentation Philosophy
+
+This documentation is designed for **finance professionals** who understand capital markets but may be new to tokenization. It focuses on:
+- Clear explanations of platform capabilities
+- Role-based guidance for different users
+- Practical workflows and use cases
+- Integration points between applications
+- Compliance and regulatory frameworks
+
+## 🔍 Target Audiences
+
+- Investment banking professionals
+- Corporate development teams
+- Capital markets specialists
+- Compliance officers
+- Asset and portfolio managers
+- Project management teams
+- Technology integration teams
+
+## 📄 License
+
+Copyright © 2024 Digital Ubiquity Capital. All rights reserved.
+
+## 💬 Support
+
+For questions about the documentation or platform:
+- Open an issue in this repository
+- Contact the DUC support team
+- Check the [FAQ](https://digitalubiquitycapital.github.io/duc-guides/help/faq/)
+- Visit our [Help Center](https://digitalubiquitycapital.github.io/duc-guides/help/finding-help/)
+
+---
+
+Built with ❤️ by the DUC Team using [MkDocs](https://www.mkdocs.org/) and [Material Theme](https://squidfunk.github.io/mkdocs-material/)
