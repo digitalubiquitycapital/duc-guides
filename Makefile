@@ -19,7 +19,10 @@ help:
 # Install dependencies
 install:
 	@echo "📦 Installing dependencies..."
-	python3 -m venv venv
+	@if [ ! -d "venv" ]; then \
+		echo "Creating virtual environment..."; \
+		python3 -m venv venv; \
+	fi
 	./venv/bin/pip install --upgrade pip
 	./venv/bin/pip install -r requirements.txt
 	./venv/bin/pip install mkdocs-with-pdf beautifulsoup4 libsass
