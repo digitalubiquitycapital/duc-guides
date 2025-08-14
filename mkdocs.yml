@@ -9,8 +9,8 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: overrides
-  logo: DUC-Logo.png
-  favicon: DUC-Square-Logo.png
+  logo: assets/images/DUC-Logo.png
+  favicon: assets/images/DUC-Square-Logo.png
   palette:
     - scheme: duc-light
       primary: custom
@@ -28,7 +28,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.instant
     - navigation.instant.prefetch
@@ -43,7 +42,6 @@ theme:
     - content.code.select
     - content.code.annotate
     - toc.follow
-    - toc.integrate
   language: en
   font:
     text: Inter
