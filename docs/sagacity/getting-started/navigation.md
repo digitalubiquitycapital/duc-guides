@@ -6,7 +6,6 @@ Learning to move around Sagacity is like learning to navigate a new office build
 
 The main menu is your roadmap to everything in Sagacity. You'll find it on the left side of your screen.
 
-![Main Menu](placeholder-main-menu.png)
 
 ### Core Sections You'll Use Daily
 
@@ -51,7 +50,6 @@ The search box at the top is incredibly powerful:
    - Keywords: "budget" or "meeting"
 3. **Click on the result** you want
 
-![Search Example](placeholder-search-example.png)
 
 ### Quick Navigation Shortcuts
 
@@ -81,7 +79,6 @@ The search box at the top is incredibly powerful:
 3. Click any task name to open it
 4. Use **filters** to find specific types of work
 
-![Task Navigation](placeholder-task-navigation.png)
 
 ### Working with Projects
 

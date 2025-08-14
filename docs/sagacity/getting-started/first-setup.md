@@ -17,7 +17,6 @@ Before we begin, make sure you have:
 4. Enter your username and password
 5. Click **"Login"**
 
-![Login Screen](placeholder-login-screen.png)
 
 ## Step 2: Complete Your Profile
 
@@ -32,7 +31,6 @@ After your first login, you'll see a welcome screen:
 3. Upload a profile picture (optional but recommended)
 4. Click **"Save Profile"**
 
-![Profile Setup](placeholder-profile-setup.png)
 
 ## Step 3: Set Your Preferences
 
@@ -46,7 +44,6 @@ Now let's customize Sagacity to work the way you do:
    - Email notification settings
 3. Click **"Save Settings"**
 
-![Settings Screen](placeholder-settings.png)
 
 ## Step 4: Explore Your Dashboard
 
@@ -74,7 +71,7 @@ Now that you're set up, let's learn about your dashboard! Continue to our [Dashb
 
 - **Forgot your password?** Click "Forgot Password" on the login screen
 - **Can't find the website link?** Contact your IT department
-- **Having technical issues?** Check our [Help section](../help/index.md)
+- **Having technical issues?** Check our [Help section](../../help/finding-help.md)
 
 ---
 

@@ -11,7 +11,6 @@ Analytics turn your daily work data into easy-to-understand pictures and numbers
 - **How you compare** to your own past performance
 - **Where you might improve** your efficiency
 
-![Analytics Dashboard](placeholder-analytics-dashboard.png)
 
 ## Finding Your Analytics
 
@@ -43,7 +42,6 @@ Analytics turn your daily work data into easy-to-understand pictures and numbers
 **What to look for:** Consistency over time, or improvements in efficiency
 **How to use it:** Better estimate future work and plan your schedule
 
-![Completion Metrics](placeholder-completion-metrics.png)
 
 ### Workload Distribution
 **What it means:** Shows what types of work fill your time
@@ -72,7 +70,6 @@ These show how your performance changes week by week or month by month.
 **📉 Downward trend:** Might indicate increased workload or need for process changes
 **➡️ Flat line:** Consistent performance (this is actually good!)
 
-![Trend Charts](placeholder-trend-charts.png)
 
 ### Bar Charts (Comparing Different Categories)
 These compare different types of work or time periods.
@@ -88,7 +85,6 @@ These show how your time is divided among different activities.
 **Small slices:** Minor activities or areas for potential growth
 **Missing slices:** Types of work you might want to add
 
-![Chart Types](placeholder-chart-types.png)
 
 ## Using Analytics to Improve Your Work
 
@@ -118,7 +114,6 @@ These show how your time is divided among different activities.
 3. **Add buffer time** for complex or unfamiliar tasks
 4. **Become more reliable** at meeting deadlines
 
-![Analytics Insights](placeholder-analytics-insights.png)
 
 ### Set Realistic Goals
 
@@ -147,7 +142,6 @@ These show how your time is divided among different activities.
 - Block time for work types that need more attention
 - Set realistic goals based on current trends
 
-![Weekly Review](placeholder-weekly-review.png)
 
 ## Analytics Red Flags to Watch For
 
@@ -190,7 +184,6 @@ These show how your time is divided among different activities.
 - Address health and wellness needs
 - Create better work environment
 
-![Warning Signs](placeholder-warning-signs.png)
 
 ## Sharing Analytics with Your Manager
 
@@ -236,7 +229,6 @@ These show how your time is divided among different activities.
 - Find opportunities for peer learning
 - Understand team-wide trends and challenges
 
-![Advanced Features](placeholder-advanced-features.png)
 
 ## Tips for Analytics Success
 

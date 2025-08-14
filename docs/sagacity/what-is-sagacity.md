@@ -272,10 +272,10 @@ graph TD
 
 ### 📚 **Professional Resources**
 
-- [Deal Origination Guide](getting-started/origination.md)
-- [Financial Modeling Tools](analytics/modeling.md)
-- [Due Diligence Workflows](processes/due-diligence.md)
-- [Client Relationship Management](client-management/overview.md)
+- [Deal Origination Guide](deals/origination.md)
+- [Financial Modeling Tools](ai-tools/financial-modeling.md)
+- [Due Diligence Workflows](deals/due-diligence.md)
+- [Client Relationship Management](daily/managing-work.md)
 
 ---
 
@@ -321,9 +321,9 @@ graph TD
 ### 🚀 **Next Steps:**
 
 1. **Request Access** - Contact your administrator for Sagacity credentials and permissions
-2. **Complete Onboarding** - Follow our [professional setup guide](../getting-started/professional-setup.md)
-3. **Configure Your Practice** - Set up [deal types](setup/deal-types.md) and [client workflows](setup/workflows.md)
-4. **Begin Deal Management** - Start with [deal origination](processes/origination.md) or [existing deal analysis](processes/analysis.md)
+2. **Complete Onboarding** - Follow our [professional setup guide](getting-started/first-setup.md)
+3. **Configure Your Practice** - Set up [deal types](deals/evaluation.md) and [client workflows](daily/managing-work.md)
+4. **Begin Deal Management** - Start with [deal origination](deals/origination.md) or [existing deal analysis](deals/evaluation.md)
 
 ---
 

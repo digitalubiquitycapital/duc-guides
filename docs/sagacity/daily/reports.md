@@ -11,7 +11,6 @@ Reports help you:
 - **Remember accomplishments** for performance reviews
 - **Share updates** with your team
 
-![Reports Overview](placeholder-reports-overview.png)
 
 ## Types of Reports You Can Create
 
@@ -43,7 +42,6 @@ Perfect for performance reviews:
 - Goals met and exceeded
 - Professional development activities
 
-![Report Types](placeholder-report-types.png)
 
 ## Creating Your First Report
 
@@ -72,7 +70,6 @@ Perfect for performance reviews:
    - Specific projects
    - Specific categories
 
-![Date Selection](placeholder-date-selection.png)
 
 ### Step 3: Customize Your Report
 
@@ -95,7 +92,6 @@ Perfect for performance reviews:
 4. **Check for accuracy** and completeness
 5. **Save your report**
 
-![Report Generation](placeholder-report-generation.png)
 
 ## Making Reports Look Professional
 
@@ -139,7 +135,6 @@ Write: "Completed 15 tasks including 3 high-priority client requests and 2 impor
 - Ask for help with types of work that consistently challenge you
 - Celebrate the work you do well
 
-![Report Analysis](placeholder-report-analysis.png)
 
 ### Sharing Reports with Others
 
@@ -195,7 +190,6 @@ Support Needed:
 - [Any help required from team/manager]
 ```
 
-![Report Templates](placeholder-report-templates.png)
 
 ### Monthly Achievement Summary
 ```
@@ -252,7 +246,6 @@ Set up reports to generate automatically:
 3. **Focus on collaborative achievements**
 4. **Highlight team goals met**
 
-![Advanced Features](placeholder-advanced-features.png)
 
 ## Tips for Report Success
 

@@ -309,10 +309,10 @@ If you're originating deals in Sagacity, Bridge integration is automatic. You'll
 
 If you're responsible for operating Bridge:
 
-1. **Master Asset Tokenization** - [Tokenization Fundamentals](getting-started/tokenization.md)
-2. **Configure SPV Structures** - [SPV Setup and Management](setup/spv-management.md)
-3. **Manage Investor Onboarding** - [KYC/AML Processes](compliance/investor-onboarding.md)
-4. **Handle Compliance** - [Regulatory Framework Guide](compliance/regulatory-guide.md)
+1. **Master Asset Tokenization** - [Tokenization Fundamentals](tokenization/asset-types.md)
+2. **Configure SPV Structures** - [SPV Setup and Management](structuring/spv.md)
+3. **Manage Investor Onboarding** - [KYC/AML Processes](investors/onboarding.md)
+4. **Handle Compliance** - [Regulatory Framework Guide](compliance/regulatory.md)
 
 ---
 

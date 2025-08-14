@@ -10,7 +10,6 @@ The dashboard is your main screen in Sagacity. Think of it as your command cente
 - Find tools you use every day
 - Get a quick overview of how things are going
 
-![Dashboard Overview](placeholder-dashboard-overview.png)
 
 ## Main Areas of Your Dashboard
 
@@ -31,7 +30,6 @@ This is usually the biggest section on your screen:
 - **Completed** - Tasks you've finished (great job!)
 - **Overdue** - Items that need immediate attention (shown in red)
 
-![Tasks Section](placeholder-tasks-section.png)
 
 **How to use it:**
 1. Click on any task to open it
@@ -54,7 +52,6 @@ On the right side, you'll see:
 - New tasks assigned to you
 - Comments and messages
 
-![Activity Feed](placeholder-activity-feed.png)
 
 ## Customizing Your Dashboard
 

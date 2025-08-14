@@ -11,7 +11,6 @@ Working with your team in Sagacity is like having a shared workspace where every
 **Communicating clearly:** Updates, questions, and feedback all in one place
 **Supporting each other:** Help teammates when they're stuck or overloaded
 
-![Team Collaboration](placeholder-team-collaboration.png)
 
 ### Benefits of Good Collaboration
 
@@ -38,7 +37,6 @@ Make it easy for teammates to work with you:
    - How you can help others
 4. **Upload a clear profile photo** - helps with remote collaboration
 
-![Team Profile](placeholder-team-profile.png)
 
 ### Understanding Team Structure
 
@@ -83,7 +81,6 @@ When you're added to a project:
 3. **Ask the project manager** if anything is unclear
 4. **Confirm deadlines and expectations** with your supervisor
 
-![Project Roles](placeholder-project-roles.png)
 
 ## Communicating with Your Team
 
@@ -115,7 +112,6 @@ When you're added to a project:
 3. **Don't overuse mentions** - save them for important communications
 4. **Respond promptly** when someone mentions you
 
-![Mentions and Comments](placeholder-mentions-comments.png)
 
 ### Status Updates and Check-ins
 
@@ -159,7 +155,6 @@ When you reach important project points:
 4. **Specify the deliverable format** you need
 5. **Be available for questions**
 
-![Task Handoffs](placeholder-task-handoffs.png)
 
 **Good task assignment example:**
 "Please review the Q4 budget draft (attached) and check the marketing section numbers against our approved campaigns. I need your feedback by Thursday at 2 PM for the Friday management presentation. Let me know if you have questions!"
@@ -191,7 +186,6 @@ When you reach important project points:
 - **Look for ways to spread the work** across more time or people
 - **Communicate early** about potential delays
 
-![Team Calendar](placeholder-team-calendar.png)
 
 ## Supporting Team Members
 
@@ -223,7 +217,6 @@ When you reach important project points:
 4. **Be grateful** and offer to return the favor
 5. **Follow up** to confirm the help was useful
 
-![Asking for Help](placeholder-asking-help.png)
 
 ## Team Communication Best Practices
 
@@ -257,7 +250,6 @@ When you reach important project points:
 4. **Escalate to your manager** if you can't reach agreement
 5. **Stay professional** and respectful throughout
 
-![Team Communication](placeholder-team-communication.png)
 
 ## Remote and Hybrid Team Collaboration
 
@@ -295,7 +287,6 @@ When you reach important project points:
 ⚠️ **Team members feeling isolated** or unsupported
 ⚠️ **Conflicts** that slow down progress
 
-![Success Indicators](placeholder-success-indicators.png)
 
 ## Collaboration Tips for Success
 
@@ -332,7 +323,7 @@ Congratulations! You've now learned all the essential skills for using Sagacity 
 - Understand your work analytics
 - Collaborate effectively with your team
 
-Continue exploring Sagacity's [Tips and Tricks](../tips/index.md) section to discover advanced features and become a power user!
+Continue exploring Sagacity's [Tips and Tricks](#) section to discover advanced features and become a power user!
 
 ---
 

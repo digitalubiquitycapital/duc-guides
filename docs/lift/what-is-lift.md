@@ -344,7 +344,7 @@ If you've been given administrative access to Lift:
 1. **Understand Your Role** - [Welcome to Lift](getting-started/welcome.md)
 2. **Explore the Dashboard** - [Your Admin Dashboard](getting-started/dashboard.md)
 3. **Learn User Management** - [Managing Users](managing/users.md)
-4. **Set Up Teams** - [Team Organization](managing/teams.md)
+4. **Set Up Teams** - [Team Organization](managing/users.md)
 
 ### 📋 **Essential First Tasks**
 

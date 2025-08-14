@@ -23,7 +23,6 @@ In Sagacity, your work comes in different types:
 - "Q4 Budget Planning"
 - "New Employee Onboarding"
 
-![Work Types](placeholder-work-types.png)
 
 ## Your Daily Work Management System
 
@@ -48,7 +47,6 @@ In Sagacity, your work comes in different types:
 3. Select High, Medium, or Low
 4. Click **"Save"**
 
-![Priority Settings](placeholder-priority-settings.png)
 
 ### Step 3: Work Through Your Tasks
 
@@ -73,7 +71,6 @@ New work comes up all the time. Here's how to capture it:
 3. **Add details** in the description
 4. **Click "Save"**
 
-![Add New Task](placeholder-add-task.png)
 
 ### Updating Task Progress
 
@@ -102,7 +99,6 @@ Help yourself plan better by estimating how long tasks will take:
 4. **Track actual time** as you work
 5. **Learn from the difference** to improve future estimates
 
-![Time Tracking](placeholder-time-tracking.png)
 
 ## Staying Organized
 
@@ -133,7 +129,6 @@ For work you do regularly:
 4. **Set when it should repeat**
 5. **Save** - Sagacity will automatically create new instances
 
-![Recurring Tasks](placeholder-recurring-tasks.png)
 
 ## Working with Deadlines
 
@@ -180,7 +175,6 @@ For work you do regularly:
 ✅ Review tomorrow's priorities
 ✅ Clear your notifications
 
-![Daily Habits](placeholder-daily-habits.png)
 
 ## Tips for Efficiency
 
